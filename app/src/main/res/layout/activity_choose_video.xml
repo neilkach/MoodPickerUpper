@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".ChooseVideoActivity">
+
+    <Button
+        android:id="@+id/button_speeches"
+        android:layout_width="260dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="100dp"
+        android:onClick="speech"
+        android:text="Speech"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_songs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_songs"
+        android:layout_width="260dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:text="Song"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_stories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_speeches" />
+
+    <Button
+        android:id="@+id/button_stories"
+        android:layout_width="260dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="100dp"
+        android:text="Story"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

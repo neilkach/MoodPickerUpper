@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainScreenActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="395dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif"
+        android:text="What type of inspiration would you like?"
+        android:textAlignment="center"
+        android:textColor="#001996"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_quotes"
+        android:layout_width="125dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp"
+        android:onClick="quote"
+        android:text="Quote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/videosbutton"
+        android:layout_width="125dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp"
+        android:onClick="videos"
+        android:text="Videos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_quotes" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="394dp"
+        android:layout_height="90dp"
+        android:onClick="info"
+        android:text="Learn About Mental Health"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videosbutton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

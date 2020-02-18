@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="456dp"
+        android:layout_height="155dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Welcome to Mood Picker Upper"
+        android:textAlignment="center"
+        android:textColor="#001996"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:hint="Password"
+        android:inputType="text|textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="134dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="140dp"
+        android:onClick="mainScreen"
+        android:text="Log In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signupbutton"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="134dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="140dp"
+        android:onClick="signup"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="147dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Don't have an account?"
+        android:textAlignment="center"
+        android:textColor="#001996"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signupbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
+        app:layout_constraintVertical_bias="0.565" />
+</androidx.constraintlayout.widget.ConstraintLayout>

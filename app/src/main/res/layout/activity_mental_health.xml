@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".MentalHealthActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="424dp"
+        android:layout_height="80dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Mental Health"
+        android:textAlignment="center"
+        android:textColor="#0F4C9E"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="197dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="198dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="textPersonName"
+        android:text="Early Warning Signs"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="414dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="244dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="8sp"
+        android:text="• Eating or sleeping too much or too little
+                                                                            • Pulling away from people and usual activities
+                                                                 • Having low or no energy"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="391dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="textPersonName"
+        android:text="Ways to maintain positive health"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/editText5"
+        android:layout_width="393dp"
+        android:layout_height="144dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="8sp"
+        android:text="• Getting professional help if you need it
+                                                                            • Connecting with others
+                                                                    • Staying positive
+                                                • Developing coping skills"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <TextView
+        android:id="@+id/editText6"
+        android:layout_width="407dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Mental Health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood."
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="206dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="9dp"
+        android:onClick="site"
+        android:text="Learn More"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintVertical_bias="0.764" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
